@@ -1,0 +1,66 @@
+# === Python ===
+
+**pycache**/
+*.py[cod]
+*$py.class
+
+# === Virtual environment ===
+
+.venv/
+venv/
+env/
+ENV/
+
+# === Jupyter Notebook ===
+
+.ipynb_checkpoints/
+
+# === IPython ===
+
+profile_default/
+ipython_config.py
+
+# === Packaging ===
+
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# === Logs ===
+
+*.log
+
+# === OS files ===
+
+.DS_Store
+Thumbs.db
+
+# === VS Code ===
+
+.vscode/
+
+# === PyCharm ===
+
+.idea/
+
+# === Environment variables ===
+
+.env
+
+# === Matplotlib cache ===
+
+.matplotlib/
+
+# === pytest ===
+
+.pytest_cache/
+
+# === mypy ===
+
+.mypy_cache/
+
+# === Temporary files ===
+
+*.tmp
+*.temp
