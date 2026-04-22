@@ -71,6 +71,10 @@ print(f"\nUndervoltage violations: {len(uv_buses)}")
 oc_lines = net.res_line[net.res_line.loading_percent > 100]
 print(f"Overcurrent violations: {len(oc_lines)}")
 
+# read the generator outputs for line 2
+q_gen2 = net.res_gen.at[0, 'q_mvar']
+
+print(f"Reactive power generated at node 2: {q_gen2:.3f} MVar")
 
 # copy the whole system for load stress test
 
@@ -80,7 +84,7 @@ load_idx = net.load[net.load.bus == b5].index[0] # load index on line/bus 5
 
 original_p = net.load.at[load_idx, 'p_mw']
 
-step = 0.01 # step in increasing power in MW
+step = 0.5 # step in increasing power in MW
 
 additional_p = 0
 
