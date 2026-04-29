@@ -207,7 +207,7 @@ if critical_voltage:
                                       candidate_buses=candidate_buses)
     for r in cap_results:
         if r['min_size'] is not None:
-            print(f"Bus {r['bus']} (name Bus {r['bus']+1}): minimal shunt capacitor = {r['min_size']:.1f} Mvar")
+            print(f"Bus {r['bus']} (name Bus {r['bus']+1}): minimal shunt capacitor = {r['min_size']:.4f} Mvar")
         else:
             print(f"Bus {r['bus']}: no solution found within tested range.")
 else:
